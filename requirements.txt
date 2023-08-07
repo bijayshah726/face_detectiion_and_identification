@@ -1,5 +1,4 @@
 face_recognition
-tempfile
 shutil
 zipfile
 base64
