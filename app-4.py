@@ -1,3 +1,4 @@
+pip install -r requirements.txt
 import cv2
 import face_recognition
 import streamlit as st
