@@ -1,5 +1,5 @@
 face_recognition
 tempfile
 shutil
-from zipfile import ZipFile
+zipfile
 opencv-python-headless==4.8.0.74
