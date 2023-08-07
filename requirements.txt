@@ -1,5 +1,5 @@
 face_recognition
-shutil
+opencv-python-headless==4.8.0.74
 zipfile
 base64
-opencv-python-headless==4.8.0.74
+
