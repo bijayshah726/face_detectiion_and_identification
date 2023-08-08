@@ -8,8 +8,6 @@ import shutil
 from zipfile import ZipFile
 import numpy as np
 
-DEMO_VIDEO = 'ri1.mp4'
-detected_faces = []  # List to store detected face images
 
 import base64
 
@@ -73,7 +71,7 @@ def main():
         if len(face_locations) > 0:
             temp=0
             for idx, (top, right, bottom, left) in enumerate(face_locations):
-                face_image = image[top:bottom, left:right]
+                face_image = np.ascontiguousarray(image[top:bottom, left:right]) #added np.ascontiguousarray
                 face_encodings = face_recognition.face_encodings(face_image)
                 if len(face_encodings) > 0:
                     face_encoding = face_encodings[0]
