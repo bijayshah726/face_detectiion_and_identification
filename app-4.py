@@ -80,8 +80,8 @@ def main():
 
                     # Save the detected face image
                     face_image_path = os.path.join(extracted_faces_dir, f"face_{ii+idx + 1}.jpg")
-                    #cv2.imwrite(face_image_path, cv2.cvtColor(face_image, cv2.COLOR_RGB2BGR))
-                    cv2.imwrite(face_image_path, cv2.cvtColor(face_image, cv2.COLOR_BGR2RGB))
+                    cv2.imwrite(face_image_path, cv2.cvtColor(face_image, cv2.COLOR_RGB2BGR))
+                    #cv2.imwrite(face_image_path, cv2.cvtColor(face_image, cv2.COLOR_BGR2RGB))
 
                     known_face_encodings.append(face_encoding)
                     face_names.append(f"Face {ii+idx + 1}")
